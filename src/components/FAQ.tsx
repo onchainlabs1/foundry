@@ -8,15 +8,15 @@ const FAQ = () => {
   const faqs = [
     {
       question: "Are you a law firm?",
-      answer: "No. We provide technical and governance consulting and partner with law firms for legal interpretation when required."
+      answer: "No—technical & governance consulting; we partner with counsel."
     },
     {
       question: "Do you certify ISO/IEC 42001?",
-      answer: "We prepare and run internal audits for AIMS; certification is issued by accredited bodies."
+      answer: "We implement AIMS and prepare internal audits; certification is by accredited bodies."
     },
     {
       question: "How long to \"get compliant\"?",
-      answer: "It depends on your role and risk. We start with a 2-week Readiness Sprint to produce a realistic plan by legal deadline."
+      answer: "Start with a 2-week Sprint; then Approval (Annex IV) or Monitoring (PMM), as needed."
     }
   ];
 
@@ -25,7 +25,7 @@ const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="section-padding bg-white scroll-m-24">
+    <section id="faq" className="section-padding bg-gradient-to-br from-slate-50 to-white scroll-m-24">
       <div className="container">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-black text-navy text-center mb-12 tracking-tight scroll-m-24">

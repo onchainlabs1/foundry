@@ -19,11 +19,11 @@ const WhyNow = () => {
   ];
 
   return (
-    <section id="why" className="section-padding bg-gradient-to-br from-slate-50 to-white">
+    <section id="why" className="section-padding bg-gradient-to-br from-slate-50 to-white scroll-m-24">
       <div className="container text-center">
-        <h2 className="text-4xl md:text-5xl font-black text-navy mb-8 tracking-tight scroll-m-24">Why Now</h2>
+        <h2 className="text-4xl md:text-5xl font-black text-navy mb-8 tracking-tight scroll-m-24">Why this matters now</h2>
         <p className="text-lg text-graphite mb-16 max-w-4xl mx-auto font-light leading-relaxed">
-          Key EU AI Act milestones affect GPAI, high-risk systems, and regulated products.
+          <strong>Key EU AI Act milestones affect GPAI, high-risk systems, and regulated products.</strong>
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 max-w-7xl mx-auto mb-16">
@@ -70,7 +70,7 @@ const WhyNow = () => {
         <div className="relative max-w-2xl mx-auto">
           <div className="absolute inset-0 bg-white/40 backdrop-blur-xl rounded-xl border border-white/30 shadow-lg" />
           <p className="relative z-10 text-sm text-gray-600 p-6 font-medium">
-            We prioritize what matters for your role (provider/deployer).
+            <strong>We prioritize what matters for your role (provider or deployer) against these dates.</strong>
           </p>
         </div>
       </div>

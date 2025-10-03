@@ -49,8 +49,7 @@ const Footer = () => {
                   © Foundry AI Governance. All rights reserved.
                 </p>
                 <p className="text-xs">
-                  We provide technical & governance consulting (not legal advice). 
-                  Not affiliated with Microsoft or Palantir.
+                  <strong>Technical & governance consulting (not legal advice). Not affiliated with Microsoft or Palantir.</strong>
                 </p>
               </div>
             </div>

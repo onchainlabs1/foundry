@@ -1,9 +1,9 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WhyNow from "@/components/WhyNow";
-import Services from "@/components/Services";
+import OfferSection from "@/components/OfferSection";
 import HowWeWork from "@/components/HowWeWork";
-import Proof from "@/components/Proof";
+import Results from "@/components/Results";
 import Resources from "@/components/Resources";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
@@ -15,9 +15,9 @@ export default function Home() {
       <Header />
       <Hero />
       <WhyNow />
-      <Services />
+      <OfferSection />
       <HowWeWork />
-      <Proof />
+      <Results />
       <Resources />
       <Contact />
       <FAQ />

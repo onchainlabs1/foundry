@@ -72,34 +72,41 @@ const Hero = () => {
               <svg className="w-4 h-4 text-soft-green mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Free 30-minute consultation</span>
+              <span>Vendor-neutral</span>
             </div>
             <div className="flex items-center">
               <svg className="w-4 h-4 text-soft-green mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Vendor-neutral approach</span>
+              <span>ISO/IEC 42001-aligned AIMS</span>
             </div>
             <div className="flex items-center">
               <svg className="w-4 h-4 text-soft-green mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Response within 1 business day</span>
+              <span>Annex IV technical documentation</span>
+            </div>
+            <div className="flex items-center">
+              <svg className="w-4 h-4 text-soft-green mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <span>EU AI Act (2025–2027)</span>
             </div>
           </div>
 
           {/* Main heading with sophisticated typography */}
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-black text-navy mb-8 leading-[0.9] tracking-tight">
-            From prototype to compliance — AI that is{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-300">
-              trustworthy, auditable,
-            </span>{" "}
-            and ready for the EU AI Act.
+            Independent AI governance for the EU AI Act — audit-ready in weeks.
           </h1>
           
           {/* Subheading with better typography */}
-          <p className="text-xl md:text-2xl text-graphite mb-12 max-w-5xl mx-auto leading-relaxed font-light">
-            We turn requirements into governance (ISO/IEC 42001) and evidence (Annex IV), so you can ship AI with confidence.
+          <p className="text-xl md:text-2xl text-graphite mb-6 max-w-5xl mx-auto leading-relaxed font-light">
+            We help you meet the EU AI Act without slowing your product roadmap. Vendor-neutral (Azure, AWS, GCP, Databricks, Snowflake). We turn requirements into <strong>ISO/IEC 42001</strong> (AI Management System) and <strong>Annex IV</strong> (EU technical file) evidence you can audit.
+          </p>
+
+          {/* Who we serve line */}
+          <p className="text-sm text-gray-600 mb-12 font-medium">
+            <strong>Who we serve:</strong> Industrial AI/robotics (high-risk) · B2B SaaS with GenAI/ML · GPAI integrators
           </p>
 
           {/* Glassmorphism CTA section */}
@@ -125,7 +132,7 @@ const Hero = () => {
                   }}
                   className="group relative bg-white/30 backdrop-blur-md border border-white/40 text-navy px-10 py-5 rounded-xl text-lg font-semibold hover:bg-white/50 hover:scale-105 transition-all duration-300 hover:shadow-xl"
                 >
-                  <span className="relative z-10">Download the AI Act Readiness Checklist</span>
+                  <span className="relative z-10">Get the AI Act Readiness Checklist</span>
                 </button>
               </div>
 

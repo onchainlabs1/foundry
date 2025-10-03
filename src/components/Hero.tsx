@@ -96,12 +96,12 @@ const Hero = () => {
 
           {/* Main heading with sophisticated typography */}
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-black text-navy mb-8 leading-[0.9] tracking-tight">
-            Independent AI governance for the EU AI Act — audit-ready in weeks.
+            From approval to monitoring — EU AI Act compliance, fast.
           </h1>
           
           {/* Subheading with better typography */}
           <p className="text-xl md:text-2xl text-graphite mb-6 max-w-5xl mx-auto leading-relaxed font-light">
-            We help you meet the EU AI Act without slowing your product roadmap. Vendor-neutral (Azure, AWS, GCP, Databricks, Snowflake). We turn requirements into <strong>ISO/IEC 42001</strong> (AI Management System) and <strong>Annex IV</strong> (EU technical file) evidence you can audit.
+            <strong>We assemble your Annex IV technical file (for approval/CE-readiness) and set up ISO/IEC 42001-based post-market monitoring — KPIs, incident response, and evidence bundles. Vendor-neutral, no tool lock-in.</strong>
           </p>
 
           {/* Who we serve line */}

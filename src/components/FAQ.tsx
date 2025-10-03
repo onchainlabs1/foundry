@@ -15,8 +15,16 @@ const FAQ = () => {
       answer: "We implement AIMS and prepare internal audits; certification is by accredited bodies."
     },
     {
+      question: "Do we need both phases?",
+      answer: "Most providers start with Phase A (Approval) to launch, then add Phase B (Monitoring) as soon as the system is live."
+    },
+    {
+      question: "What's expected from our team?",
+      answer: "A 2-week intensive sprint with rapid access to product, ML and compliance owners; we write the docs and set up controls together."
+    },
+    {
       question: "How long to \"get compliant\"?",
-      answer: "Start with a 2-week Sprint; then Approval (Annex IV) or Monitoring (PMM), as needed."
+      answer: "Start with the Quickstart Sprint (~2 weeks); then Phase A and/or Phase B as needed."
     }
   ];
 

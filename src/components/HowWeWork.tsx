@@ -13,12 +13,12 @@ const HowWeWork = () => {
     {
       number: "3",
       title: "Prove",
-      description: "Audit-ready documents (AIMS / Annex IV)",
+      description: "Audit-ready documents (AIMS / Annex IV / FRIA / transparency)",
     },
     {
       number: "4",
       title: "Monitor",
-      description: "PMM basics and incident playbooks",
+      description: "PMM basics, dashboards & incident playbooks",
     },
   ];
 

@@ -8,14 +8,14 @@ const OfferSection = () => {
           </h2>
         </div>
 
-        {/* Core Offer */}
+        {/* Quickstart Sprint */}
         <div className="max-w-4xl mx-auto mb-16">
           <div className="bg-white/60 backdrop-blur-xl rounded-2xl shadow-xl p-8 border border-white/30 mb-8">
             <h3 className="text-2xl font-bold text-navy mb-6">
-              <strong>Core Offer — Readiness Sprint (2 weeks)</strong>
+              <strong>Quickstart Compliance Sprint (≈2 weeks)</strong>
             </h3>
             <p className="text-graphite mb-6 font-medium">
-              <strong>Outcome:</strong> in two weeks you know exactly what the EU AI Act asks from you and you have a <strong>90-day, audit-ready plan</strong>.
+              <strong>Outcome:</strong> in ~2 weeks you know exactly what the EU AI Act asks from you and you have a <strong>90-day, audit-ready plan</strong>.
             </p>
             
             <div className="mb-6">
@@ -48,65 +48,94 @@ const OfferSection = () => {
               </ul>
             </div>
             
-            <p className="text-graphite text-sm">
-              <strong>Not included:</strong> policy or Annex IV drafting (see Tracks below)
+            <div className="border-t border-gray-200 pt-4 space-y-3">
+              <p className="text-graphite text-sm">
+                <strong>Collaboration:</strong> intensive, with rapid access to your product/ML/compliance owners (daily check-ins).
+              </p>
+              <p className="text-graphite text-sm">
+                <strong>Post-sprint support:</strong> one review session within 30 days for auditor feedback or minor tweaks.
+              </p>
+              <p className="text-graphite text-sm">
+                <strong>Note:</strong> policy drafting and technical file assembly happen in the phases below.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Phases */}
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-2xl font-bold text-navy text-center mb-12">
+            Phases (complementary, sequential)
+          </h3>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Phase A */}
+            <div className="bg-white/60 backdrop-blur-xl rounded-2xl shadow-xl p-8 border border-white/30">
+              <h4 className="text-xl font-bold text-navy mb-4">
+                <strong>Phase A — Approval (Annex IV & CE-readiness)</strong>
+              </h4>
+              <p className="text-graphite mb-6 font-medium">
+                <strong>Outcome:</strong> <strong>Annex IV technical file (v1)</strong> ready for internal review or submission.
+              </p>
+              <div className="mb-4">
+                <h5 className="text-lg font-semibold text-navy mb-3">Deliverables:</h5>
+                <ul className="space-y-2 text-sm text-graphite">
+                  <li>• <strong>Test & evaluation plan</strong> (accuracy/robustness/bias/safety) + documented <strong>results</strong></li>
+                  <li>• <strong>Fundamental Rights Impact Assessment (FRIA)</strong> and <strong>user transparency notices</strong></li>
+                  <li>• <strong>Data & Model Cards</strong> (purpose, limits, data lineage)</li>
+                  <li>• <strong>Human oversight</strong> plan (intervention thresholds, fallbacks)</li>
+                  <li>• <strong>Minimal logging</strong> for traceability (trace_id, model_version, score, latency, digests)</li>
+                  <li>• <strong>CE-readiness checklist</strong> and submission guidance</li>
+                </ul>
+              </div>
+              <p className="text-sm text-gray-600 italic">
+                Note: we prepare; <strong>certification/conformity is performed by accredited bodies</strong>.
+              </p>
+            </div>
+
+            {/* Phase B */}
+            <div className="bg-white/60 backdrop-blur-xl rounded-2xl shadow-xl p-8 border border-white/30">
+              <h4 className="text-xl font-bold text-navy mb-4">
+                <strong>Phase B — Monitoring (Post-Market Monitoring, Art. 61)</strong>
+              </h4>
+              <p className="text-graphite mb-6 font-medium">
+                <strong>Outcome:</strong> continuous compliance in production with <strong>audit-ready evidence</strong>.
+              </p>
+              <div className="mb-4">
+                <h5 className="text-lg font-semibold text-navy mb-3">Deliverables:</h5>
+                <ul className="space-y-2 text-sm text-graphite">
+                  <li>• <strong>KPIs & thresholds</strong> (quality, drift, bias; for LLMs: hallucination/safety)</li>
+                  <li>• <strong>Dashboards & alerts</strong> (exportable) and monthly <strong>evidence bundle</strong> (CSV/HTML/PDF)</li>
+                  <li>• <strong>Incident playbooks</strong> (serious-incident criteria, timelines, audit trail)</li>
+                  <li>• <strong>Internal audit cadence</strong> and improvement loop</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* AIMS Note */}
+          <div className="mt-8 text-center">
+            <p className="text-sm text-gray-600 max-w-4xl mx-auto">
+              <strong>AIMS (ISO/IEC 42001) Lite</strong> underpins both phases (policies, RACI, risk, PMM, internal-audit checklist).
             </p>
           </div>
         </div>
 
-        {/* Tracks */}
-        <div className="max-w-6xl mx-auto">
-          <h3 className="text-2xl font-bold text-navy text-center mb-12">
-            Tracks (choose after the Sprint)
-          </h3>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Track A */}
-            <div className="bg-white/60 backdrop-blur-xl rounded-2xl shadow-xl p-8 border border-white/30">
-              <h4 className="text-xl font-bold text-navy mb-4">
-                <strong>Track A — Approval (Conformity & CE-readiness) (3–5 weeks)</strong>
-              </h4>
-              <p className="text-graphite mb-6 font-medium">
-                <strong>Outcome:</strong> <strong>Annex IV technical file (v1)</strong> for a representative high-risk system.
-              </p>
-              <div className="mb-4">
-                <h5 className="text-lg font-semibold text-navy mb-3">Deliverables:</h5>
-                <ul className="space-y-2 text-sm text-graphite">
-                  <li>• test & evaluation plan + results</li>
-                  <li>• <strong>Data & Model Cards</strong></li>
-                  <li>• <strong>human oversight</strong> plan</li>
-                  <li>• <strong>minimal logging</strong> for traceability</li>
-                  <li>• <strong>CE-readiness checklist</strong></li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Track B */}
-            <div className="bg-white/60 backdrop-blur-xl rounded-2xl shadow-xl p-8 border border-white/30">
-              <h4 className="text-xl font-bold text-navy mb-4">
-                <strong>Track B — Monitoring (Post-Market Monitoring, Art. 61) (4–6 weeks)</strong>
-              </h4>
-              <p className="text-graphite mb-6 font-medium">
-                <strong>Outcome:</strong> continuous compliance in production.
-              </p>
-              <div className="mb-4">
-                <h5 className="text-lg font-semibold text-navy mb-3">Deliverables:</h5>
-                <ul className="space-y-2 text-sm text-graphite">
-                  <li>• <strong>KPIs</strong> (quality, drift, bias; LLM safety) + <strong>thresholds</strong></li>
-                  <li>• <strong>dashboards & alerts</strong></li>
-                  <li>• <strong>monthly evidence bundle</strong> (CSV/HTML/PDF)</li>
-                  <li>• <strong>incident playbooks</strong></li>
-                  <li>• <strong>internal audit cadence</strong></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Note */}
-          <div className="mt-8 text-center">
-            <p className="text-sm text-gray-600 max-w-4xl mx-auto">
-              <strong>ISO/IEC 42001 (AIMS) Lite</strong> underpins both tracks (policies, RACI, risk, PMM, internal-audit checklist). Certification is by accredited bodies (we prepare; we don't certify).
+        {/* Optional Tech Implementation Block */}
+        <div className="max-w-4xl mx-auto mt-12">
+          <div className="bg-gradient-to-br from-navy/5 to-soft-green/5 rounded-2xl p-6 border border-navy/10">
+            <h4 className="text-lg font-semibold text-navy mb-3">
+              <strong>Tech Implementation (beyond documents)</strong>
+            </h4>
+            <p className="text-graphite text-sm italic mb-4">
+              We don't just write documents — we instrument your AI so compliance runs in production.
             </p>
+            <ul className="space-y-2 text-sm text-graphite">
+              <li>• <strong>Observability:</strong> drift/bias/quality KPIs, logs, dashboards & alerts (exportable)</li>
+              <li>• <strong>Explainability:</strong> model/data cards, SHAP/LIME, human-oversight guides</li>
+              <li>• <strong>Evaluation gates:</strong> YAML policies + CI checks, release reports</li>
+              <li>• <strong>Evidence bundles:</strong> monthly Annex IV/PMM packages for audits</li>
+            </ul>
           </div>
         </div>
       </div>

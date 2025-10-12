@@ -4,6 +4,8 @@ import { useState } from "react";
 
 export default function DemoPage() {
   const [page, setPage] = useState("Overview");
+  
+  console.log("Current page:", page);
 
   const nav = [
     { name: "Overview", icon: "📊" },
@@ -47,7 +49,10 @@ export default function DemoPage() {
               {nav.map((n) => (
                 <button
                   key={n.name}
-                  onClick={() => setPage(n.name)}
+                  onClick={() => {
+                    console.log("Clicked:", n.name);
+                    setPage(n.name);
+                  }}
                   className={`flex items-center gap-2 px-3 py-2 rounded-xl text-sm text-left border transition-all ${
                     page === n.name ? "bg-slate-900 text-white border-slate-900" : "bg-white border-slate-200 hover:bg-slate-50"
                   }`}

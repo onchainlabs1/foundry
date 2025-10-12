@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   LayoutGrid,
@@ -22,28 +22,52 @@ import {
   FolderOpen,
   LineChart as LineChartIcon,
   Home,
+  TrendingUp,
 } from "lucide-react";
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  Tooltip,
-  ResponsiveContainer,
-  CartesianGrid,
-} from "recharts";
+
+// UI Components
+const Button = ({ className = "", children, ...props }: any) => (
+  <button
+    className={`px-3 py-2 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-px transition-all text-sm bg-white ${className}`}
+    {...props}
+  >
+    {children}
+  </button>
+);
+
+const Badge = ({ children, color = "slate" }: { children: React.ReactNode; color?: string }) => {
+  const colorMap: Record<string, string> = {
+    slate: "bg-slate-100 text-slate-800",
+    amber: "bg-amber-100 text-amber-800",
+    emerald: "bg-emerald-100 text-emerald-800",
+    indigo: "bg-indigo-100 text-indigo-800",
+  };
+  return (
+    <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ${colorMap[color] || colorMap.slate}`}>
+      {children}
+    </span>
+  );
+};
+
+const Card = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
+  <div className={`bg-white rounded-3xl shadow-sm border border-slate-200 ${className}`}>{children}</div>
+);
+
+const CardHeader = ({ title, subtitle, icon }: { title: string; subtitle?: string; icon: React.ReactNode }) => (
+  <div className="p-5 border-b border-slate-100 flex items-center gap-3">
+    <div className="p-2 rounded-xl bg-slate-50 border border-slate-100">{icon}</div>
+    <div>
+      <h3 className="text-lg font-semibold text-slate-800">{title}</h3>
+      {subtitle && <p className="text-xs text-slate-500">{subtitle}</p>}
+    </div>
+  </div>
+);
+
+const CardBody = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
+  <div className={`p-5 ${className}`}>{children}</div>
+);
 
 // Fake data
-const readinessTrend = [
-  { month: "Apr", score: 42 },
-  { month: "May", score: 48 },
-  { month: "Jun", score: 55 },
-  { month: "Jul", score: 61 },
-  { month: "Aug", score: 67 },
-  { month: "Sep", score: 73 },
-  { month: "Oct", score: 78 },
-];
-
 const systemsSeed = [
   {
     id: 1,
@@ -95,54 +119,6 @@ const gapsSeed = [
   { clause: "ISO42001:9.1 Monitoring", severity: "medium", status: "partial" },
 ];
 
-const evidenceSeed = [
-  { id: "EV-001", label: "Model Card v1.2", control: "8.3.2", version: 3, checksum: "5ab1…c9" },
-  { id: "EV-002", label: "Data Sheet (Training)", control: "8.3.1", version: 1, checksum: "229e…51" },
-  { id: "EV-003", label: "Evaluation Plan", control: "9.1.1", version: 2, checksum: "88fe…1d" },
-];
-
-// UI Components
-const Button = ({ className = "", children, ...props }: any) => (
-  <button
-    className={`px-3 py-2 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-px transition-all text-sm bg-white ${className}`}
-    {...props}
-  >
-    {children}
-  </button>
-);
-
-const Badge = ({ children, color = "slate" }: { children: React.ReactNode; color?: string }) => {
-  const colorMap: Record<string, string> = {
-    slate: "bg-slate-100 text-slate-800",
-    amber: "bg-amber-100 text-amber-800",
-    emerald: "bg-emerald-100 text-emerald-800",
-    indigo: "bg-indigo-100 text-indigo-800",
-  };
-  return (
-    <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ${colorMap[color] || colorMap.slate}`}>
-      {children}
-    </span>
-  );
-};
-
-const Card = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
-  <div className={`bg-white rounded-3xl shadow-sm border border-slate-200 ${className}`}>{children}</div>
-);
-
-const CardHeader = ({ title, subtitle, icon }: { title: string; subtitle?: string; icon: React.ReactNode }) => (
-  <div className="p-5 border-b border-slate-100 flex items-center gap-3">
-    <div className="p-2 rounded-xl bg-slate-50 border border-slate-100">{icon}</div>
-    <div>
-      <h3 className="text-lg font-semibold text-slate-800">{title}</h3>
-      {subtitle && <p className="text-xs text-slate-500">{subtitle}</p>}
-    </div>
-  </div>
-);
-
-const CardBody = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
-  <div className={`p-5 ${className}`}>{children}</div>
-);
-
 // Utility functions
 const classBadge = (cls: string) => {
   const map: Record<string, { text: string; color: string }> = {
@@ -172,13 +148,12 @@ const statusChip = (status: string) => {
 
 // Page Components
 function Overview({ systems }: { systems: any[] }) {
-  const kpis = useMemo(() => {
-    const total = systems.length;
-    const high = systems.filter((s) => s.class === "high").length;
-    const implementedPct = 62;
-    const controlsDue = 7;
-    return { total, high, implementedPct, controlsDue };
-  }, [systems]);
+  const kpis = {
+    total: systems.length,
+    high: systems.filter((s) => s.class === "high").length,
+    implementedPct: 62,
+    controlsDue: 7,
+  };
 
   return (
     <div className="grid grid-cols-1 xl:grid-cols-12 gap-5">
@@ -227,16 +202,18 @@ function Overview({ systems }: { systems: any[] }) {
         <Card>
           <CardHeader title="Readiness Trend" subtitle="Last 6 months" icon={<LineChartIcon className="h-5 w-5 text-slate-600" />} />
           <CardBody>
-            <div className="h-40">
-              <ResponsiveContainer width="100%" height="100%">
-                <LineChart data={readinessTrend} margin={{ left: 0, right: 0, top: 10, bottom: 0 }}>
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="month" />
-                  <YAxis domain={[0, 100]} />
-                  <Tooltip />
-                  <Line type="monotone" dataKey="score" strokeWidth={2} dot={false} stroke="#10B981" />
-                </LineChart>
-              </ResponsiveContainer>
+            <div className="h-40 bg-gradient-to-t from-emerald-50 to-transparent rounded-xl flex items-end justify-center">
+              <div className="w-full h-full flex items-end justify-between px-4 pb-4">
+                {[42, 48, 55, 61, 67, 73, 78].map((height, i) => (
+                  <div key={i} className="flex flex-col items-center gap-1">
+                    <div 
+                      className="bg-emerald-500 rounded-t w-6 transition-all duration-500 hover:bg-opacity-80"
+                      style={{ height: `${height}%` }}
+                    />
+                    <span className="text-xs text-slate-500">{['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'][i]}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </CardBody>
         </Card>
@@ -380,7 +357,11 @@ function Evidence() {
         <CardHeader title="Evidence Vault" subtitle="Versioned & hashed" icon={<FileText className="h-5 w-5 text-slate-600" />} />
         <CardBody>
           <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-3">
-            {evidenceSeed.map((e) => (
+            {[
+              { id: "EV-001", label: "Model Card v1.2", control: "8.3.2", version: 3, checksum: "5ab1…c9" },
+              { id: "EV-002", label: "Data Sheet (Training)", control: "8.3.1", version: 1, checksum: "229e…51" },
+              { id: "EV-003", label: "Evaluation Plan", control: "9.1.1", version: 2, checksum: "88fe…1d" },
+            ].map((e) => (
               <div key={e.id} className="border border-slate-100 rounded-2xl p-3 bg-white flex items-center justify-between">
                 <div>
                   <div className="text-sm font-medium">{e.label}</div>
@@ -525,7 +506,7 @@ export default function DemoPage() {
       </div>
 
       <footer className="py-8 text-center text-xs text-slate-400">
-        ISO/IEC 42001 • EU AI Act • AIMS Readiness Demo — Built with Tailwind + Framer Motion + Recharts
+        ISO/IEC 42001 • EU AI Act • AIMS Readiness Demo — Built with Tailwind + Framer Motion
       </footer>
     </div>
   );

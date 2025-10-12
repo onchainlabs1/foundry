@@ -4,6 +4,7 @@ import WhyNow from "@/components/WhyNow";
 import OfferSection from "@/components/OfferSection";
 import HowWeWork from "@/components/HowWeWork";
 import Results from "@/components/Results";
+import PlatformDemo from "@/components/PlatformDemo";
 import Resources from "@/components/Resources";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
@@ -18,6 +19,7 @@ export default function Home() {
       <OfferSection />
       <HowWeWork />
       <Results />
+      <PlatformDemo />
       <Resources />
       <Contact />
       <FAQ />

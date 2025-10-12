@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Logo from "./Logo";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,11 +59,9 @@ const Header = () => {
       <div className="container flex items-center justify-between h-full">
         <Link 
           href="/" 
-          className="text-xl font-bold text-navy hover:scale-105 transition-transform duration-300 group"
+          className="hover:scale-105 transition-transform duration-300 group"
         >
-          <span className="group-hover:text-soft-green transition-colors duration-300">
-            Foundry AI Governance
-          </span>
+          <Logo className="group-hover:opacity-90 transition-opacity duration-300" />
         </Link>
 
         <nav className="hidden md:flex items-center space-x-8">

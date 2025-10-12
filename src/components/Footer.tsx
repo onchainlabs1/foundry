@@ -1,10 +1,14 @@
+import Logo from "./Logo";
+
 const Footer = () => {
   return (
     <footer className="bg-navy text-white py-12">
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold mb-4">Foundry AI Governance</h3>
+            <div className="flex justify-center mb-4">
+              <Logo className="text-white" />
+            </div>
             <p className="text-gray-300 mb-6">
               Independent AI governance for the EU AI Act (ISO/IEC 42001 & Annex IV)
             </p>

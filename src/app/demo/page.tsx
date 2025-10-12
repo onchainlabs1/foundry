@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Logo from "@/components/Logo";
 
 export default function DemoPage() {
   const [page, setPage] = useState("Overview");
@@ -22,7 +23,7 @@ export default function DemoPage() {
       <div className="sticky top-0 z-30 bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
           <div className="flex items-center gap-2">
-            <span className="text-2xl">🛡️</span>
+            <Logo showText={false} className="text-slate-900" />
             <span className="font-semibold text-slate-900">AIMS Readiness</span>
           </div>
           <div className="ml-auto flex items-center gap-2">

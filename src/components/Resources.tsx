@@ -1,10 +1,6 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
-
 const Resources = () => {
-  const searchParams = useSearchParams();
-  const goal = searchParams.get("goal");
 
   const resources = [
     {
@@ -29,15 +25,10 @@ const Resources = () => {
       detail: { name: "resource_click", resource: resourceGoal } 
     }));
     
-    // Prefill the contact form with the goal
+    // Scroll to contact form
     const contactSection = document.querySelector("#contact");
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: "smooth" });
-      
-      // Set the goal in the form (this will be handled by the Contact component)
-      const url = new URL(window.location.href);
-      url.searchParams.set("goal", resourceGoal);
-      window.history.replaceState({}, "", url.toString());
     }
   };
 

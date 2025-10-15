@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
 
 interface FormData {
   fullName: string;
@@ -13,9 +12,17 @@ interface FormData {
   consent: boolean;
 }
 
-const Contact = () => {
-  const searchParams = useSearchParams();
-  const goal = searchParams.get("goal");
+interface FormErrors {
+  fullName?: string;
+  email?: string;
+  company?: string;
+  role?: string;
+  goals?: string;
+  message?: string;
+  consent?: string;
+}
+
+const ContactForm = () => {
   
   const [formData, setFormData] = useState<FormData>({
     fullName: "",
@@ -27,21 +34,14 @@ const Contact = () => {
     consent: false,
   });
   
-  const [errors, setErrors] = useState<Partial<FormData>>({});
+  const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  useEffect(() => {
-    if (goal) {
-      setFormData(prev => ({
-        ...prev,
-        goals: [goal]
-      }));
-    }
-  }, [goal]);
+  // Goal prefill removed for build compatibility
 
   const validateForm = (): boolean => {
-    const newErrors: Partial<FormData> = {};
+    const newErrors: FormErrors = {};
 
     if (!formData.fullName.trim()) {
       newErrors.fullName = "Full name is required";
@@ -436,4 +436,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactForm;

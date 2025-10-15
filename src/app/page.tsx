@@ -1,3 +1,6 @@
+"use client";
+
+import { Suspense } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WhyNow from "@/components/WhyNow";
@@ -21,7 +24,9 @@ export default function Home() {
       <Results />
       <PlatformPreview />
       <Resources />
-      <Contact />
+      <Suspense fallback={<div>Loading contact form...</div>}>
+        <Contact />
+      </Suspense>
       <FAQ />
       <Footer />
     </main>

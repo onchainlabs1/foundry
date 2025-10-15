@@ -10,7 +10,7 @@ const OfferSection = () => {
 
         {/* Quickstart Sprint */}
         <div className="max-w-4xl mx-auto mb-16">
-          <div className="bg-white/60 backdrop-blur-xl rounded-2xl shadow-xl p-8 border border-white/30 mb-8">
+          <div className="bg-gradient-to-br from-white via-white to-gray-50/30 rounded-3xl shadow-xl hover:shadow-2xl p-8 border border-gray-200/50 hover:-translate-y-1 transition-all duration-300 mb-8">
             <h3 className="text-2xl font-bold text-navy mb-6">
               <strong>Quickstart Compliance Sprint (≈2 weeks)</strong>
             </h3>
@@ -70,7 +70,7 @@ const OfferSection = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Phase A */}
-            <div className="bg-white/60 backdrop-blur-xl rounded-2xl shadow-xl p-8 border border-white/30">
+            <div className="bg-gradient-to-br from-white via-white to-gray-50/30 rounded-3xl shadow-xl hover:shadow-2xl p-8 border border-gray-200/50 hover:-translate-y-1 transition-all duration-300">
               <h4 className="text-xl font-bold text-navy mb-4">
                 <strong>Phase A — Approval (Annex IV & CE-readiness)</strong>
               </h4>
@@ -94,7 +94,7 @@ const OfferSection = () => {
             </div>
 
             {/* Phase B */}
-            <div className="bg-white/60 backdrop-blur-xl rounded-2xl shadow-xl p-8 border border-white/30">
+            <div className="bg-gradient-to-br from-white via-white to-gray-50/30 rounded-3xl shadow-xl hover:shadow-2xl p-8 border border-gray-200/50 hover:-translate-y-1 transition-all duration-300">
               <h4 className="text-xl font-bold text-navy mb-4">
                 <strong>Phase B — Monitoring (Post-Market Monitoring, Art. 61)</strong>
               </h4>

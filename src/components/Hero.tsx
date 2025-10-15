@@ -111,7 +111,7 @@ const Hero = () => {
 
           {/* Glassmorphism CTA section */}
           <div className="relative">
-            <div className="absolute inset-0 bg-white/20 backdrop-blur-xl rounded-2xl border border-white/30 shadow-2xl" />
+            <div className="absolute inset-0 bg-gradient-to-br from-white/95 to-white/80 rounded-2xl border border-gray-200/30 shadow-2xl" />
             <div className="relative p-8">
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-6">
                 <button
@@ -119,7 +119,7 @@ const Hero = () => {
                     handleCTAClick("primary");
                     scrollToSection("#contact");
                   }}
-                  className="group relative bg-navy text-white px-6 py-3 sm:px-10 sm:py-5 rounded-xl text-base sm:text-lg font-semibold hover:bg-opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                  className="group relative bg-gradient-to-r from-navy via-navy to-navy/90 text-white px-6 py-3 sm:px-10 sm:py-5 rounded-xl text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:from-navy/90 hover:to-navy transition-all duration-300"
                 >
                   <span className="relative z-10">Book a 30-min Consultation</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-navy to-navy/80 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -130,7 +130,7 @@ const Hero = () => {
                     handleCTAClick("secondary");
                     scrollToSection("#resources");
                   }}
-                  className="group relative bg-white/30 backdrop-blur-md border border-white/40 text-navy px-6 py-3 sm:px-10 sm:py-5 rounded-xl text-base sm:text-lg font-semibold hover:bg-white/50 hover:scale-105 transition-all duration-300 hover:shadow-xl"
+                  className="group relative bg-gradient-to-br from-white/90 to-white/70 border border-gray-200/50 text-navy px-6 py-3 sm:px-10 sm:py-5 rounded-xl text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:from-white hover:to-white/90 transition-all duration-300"
                 >
                   <span className="relative z-10">Get the AI Act Readiness Checklist</span>
                 </button>

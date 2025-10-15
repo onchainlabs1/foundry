@@ -53,7 +53,7 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-white/80 backdrop-blur-xl shadow-lg border-b border-white/20 h-16"
+          ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200/50 h-16"
           : "bg-transparent h-20"
       }`}
     >
@@ -115,7 +115,7 @@ const Header = () => {
           <a
             href="#contact"
             onClick={(e) => handleNavClick(e, "#contact")}
-            className="group relative bg-navy text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-xl overflow-hidden"
+            className="group relative bg-gradient-to-r from-navy via-navy to-navy/90 text-white px-6 py-3 rounded-xl text-sm font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:from-navy/90 hover:to-navy transition-all duration-300 overflow-hidden"
           >
             <span className="relative z-10">Book a 30-min Consultation</span>
             {/* Shimmer effect */}
@@ -126,7 +126,7 @@ const Header = () => {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-xl border-b border-white/20 shadow-lg">
+        <div className="md:hidden bg-white/98 backdrop-blur-md border-b border-gray-200/50 shadow-lg">
           <div className="container py-4">
             <nav className="flex flex-col space-y-4">
               {navItems.map((item) => (

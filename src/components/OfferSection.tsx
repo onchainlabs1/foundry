@@ -2,14 +2,14 @@ const OfferSection = () => {
   return (
     <section id="offer" className="section-padding bg-white scroll-m-24">
       <div className="container">
-        <div className="max-w-5xl mx-auto text-center mb-16">
+        <div className="max-w-5xl mx-auto text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-black text-navy mb-8 tracking-tight scroll-m-24">
             What you get — simple, fixed-scope
           </h2>
         </div>
 
         {/* Quickstart Sprint */}
-        <div className="max-w-4xl mx-auto mb-16">
+        <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-gradient-to-br from-white via-white to-gray-50/30 rounded-3xl shadow-xl hover:shadow-2xl p-8 border border-gray-200/50 hover:-translate-y-1 transition-all duration-300 mb-8">
             <h3 className="text-2xl font-bold text-navy mb-6">
               <strong>Quickstart Compliance Sprint (≈2 weeks)</strong>
@@ -64,7 +64,7 @@ const OfferSection = () => {
 
         {/* Phases */}
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-2xl font-bold text-navy text-center mb-12">
+          <h3 className="text-2xl font-bold text-navy text-center mb-8">
             Phases (complementary, sequential)
           </h3>
           

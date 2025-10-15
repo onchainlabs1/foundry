@@ -105,7 +105,7 @@ const Hero = () => {
           </p>
 
           {/* Who we serve line */}
-          <p className="text-sm text-gray-600 mb-12 font-medium">
+          <p className="text-sm text-gray-600 mb-8 font-medium">
             <strong>Who we serve:</strong> Industrial AI/robotics (high-risk) · B2B SaaS with GenAI/ML · GPAI integrators
           </p>
 

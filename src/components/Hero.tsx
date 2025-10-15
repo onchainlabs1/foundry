@@ -63,7 +63,7 @@ const Hero = () => {
 
           {/* Main heading with sophisticated typography */}
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-navy mb-8 leading-[0.9] tracking-tight">
-            From approval to monitoring — <span className="text-soft-green">EU AI Act</span> compliance, <span className="text-soft-green">fast</span>.
+            From approval to monitoring — EU AI Act compliance, fast.
           </h1>
           
           {/* Subheading with better typography */}

@@ -30,39 +30,6 @@ const Hero = () => {
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-navy/10 rounded-full blur-3xl animate-pulse delay-1000" />
       </div>
       
-      {/* Beacon/Arrow SVG with animation */}
-      <div className="absolute right-10 top-1/2 -translate-y-1/2 hidden lg:block">
-        <svg
-          width="300"
-          height="200"
-          viewBox="0 0 300 200"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="opacity-20 animate-pulse"
-        >
-          {/* Upward arrow/beacon */}
-          <path
-            d="M150 20 L280 150 L260 170 L150 40 L40 170 L20 150 Z"
-            fill="#0B1F3B"
-            opacity="0.4"
-          />
-          
-          {/* Beacon light rays */}
-          <path
-            d="M150 20 L200 70 L190 80 L150 30 Z"
-            fill="#10B981"
-            opacity="0.3"
-          />
-          <path
-            d="M150 20 L100 70 L110 80 L150 30 Z"
-            fill="#10B981"
-            opacity="0.3"
-          />
-          
-          {/* Central beacon dot */}
-          <circle cx="150" cy="20" r="8" fill="#10B981" opacity="0.6" />
-        </svg>
-      </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto text-center">
@@ -96,7 +63,7 @@ const Hero = () => {
 
           {/* Main heading with sophisticated typography */}
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-navy mb-8 leading-[0.9] tracking-tight">
-            From approval to monitoring — EU AI Act compliance, fast.
+            From approval to monitoring — <span className="text-soft-green">EU AI Act</span> compliance, <span className="text-soft-green">fast</span>.
           </h1>
           
           {/* Subheading with better typography */}

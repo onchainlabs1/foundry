@@ -7,6 +7,7 @@ import Logo from "./Logo";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,6 +65,7 @@ const Header = () => {
           <Logo className="group-hover:opacity-90 transition-opacity duration-300" />
         </Link>
 
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
             <a
@@ -89,6 +91,26 @@ const Header = () => {
           ))}
         </nav>
 
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden p-2 text-navy hover:text-soft-green transition-colors"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle mobile menu"
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            {isMobileMenuOpen ? (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
+        </button>
+
         <div className="flex items-center">
           <a
             href="#contact"
@@ -101,6 +123,45 @@ const Header = () => {
           </a>
         </div>
       </div>
+
+      {/* Mobile Menu Dropdown */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-white/95 backdrop-blur-xl border-b border-white/20 shadow-lg">
+          <div className="container py-4">
+            <nav className="flex flex-col space-y-4">
+              {navItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  onClick={(e) => {
+                    handleNavClick(e, item.href);
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className={`text-base font-medium py-2 transition-colors ${
+                    activeSection === item.href
+                      ? "text-navy"
+                      : "text-graphite hover:text-navy"
+                  }`}
+                >
+                  {item.label}
+                </a>
+              ))}
+              <div className="pt-4 border-t border-gray-200">
+                <a
+                  href="#contact"
+                  onClick={(e) => {
+                    handleNavClick(e, "#contact");
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="block w-full bg-navy text-white text-center py-3 px-6 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
+                >
+                  Book a 30-min Consultation
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      )}
     </header>
   );
 };

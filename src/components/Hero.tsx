@@ -64,7 +64,7 @@ const Hero = () => {
         </svg>
       </div>
 
-      <div className="container relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto text-center">
           {/* Trust signals */}
           <div className="flex items-center justify-center space-x-6 mb-8 text-sm text-gray-500">
@@ -95,12 +95,12 @@ const Hero = () => {
           </div>
 
           {/* Main heading with sophisticated typography */}
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-black text-navy mb-8 leading-[0.9] tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-navy mb-8 leading-[0.9] tracking-tight">
             From approval to monitoring — EU AI Act compliance, fast.
           </h1>
           
           {/* Subheading with better typography */}
-          <p className="text-xl md:text-2xl text-graphite mb-6 max-w-5xl mx-auto leading-relaxed font-light">
+          <p className="text-lg sm:text-xl md:text-2xl text-graphite mb-6 max-w-5xl mx-auto leading-relaxed font-light px-4">
             <strong>We assemble your Annex IV technical file (for approval/CE-readiness) and set up ISO/IEC 42001-based post-market monitoring — KPIs, incident response, and evidence bundles. Vendor-neutral, no tool lock-in.</strong>
           </p>
 
@@ -119,7 +119,7 @@ const Hero = () => {
                     handleCTAClick("primary");
                     scrollToSection("#contact");
                   }}
-                  className="group relative bg-navy text-white px-10 py-5 rounded-xl text-lg font-semibold hover:bg-opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                  className="group relative bg-navy text-white px-6 py-3 sm:px-10 sm:py-5 rounded-xl text-base sm:text-lg font-semibold hover:bg-opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-xl"
                 >
                   <span className="relative z-10">Book a 30-min Consultation</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-navy to-navy/80 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -130,7 +130,7 @@ const Hero = () => {
                     handleCTAClick("secondary");
                     scrollToSection("#resources");
                   }}
-                  className="group relative bg-white/30 backdrop-blur-md border border-white/40 text-navy px-10 py-5 rounded-xl text-lg font-semibold hover:bg-white/50 hover:scale-105 transition-all duration-300 hover:shadow-xl"
+                  className="group relative bg-white/30 backdrop-blur-md border border-white/40 text-navy px-6 py-3 sm:px-10 sm:py-5 rounded-xl text-base sm:text-lg font-semibold hover:bg-white/50 hover:scale-105 transition-all duration-300 hover:shadow-xl"
                 >
                   <span className="relative z-10">Get the AI Act Readiness Checklist</span>
                 </button>

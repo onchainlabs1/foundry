@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-import RevealHero from "./RevealHero";
 
 const Hero = () => {
   useEffect(() => {
@@ -64,7 +63,7 @@ const Hero = () => {
 
           {/* Main heading with sophisticated typography */}
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-navy mb-8 leading-[0.9] tracking-tight">
-            <RevealHero />
+            Make AI compliance simple.
           </h1>
           
           {/* Subheading with better typography */}

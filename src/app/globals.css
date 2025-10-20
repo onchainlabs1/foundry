@@ -171,38 +171,3 @@
     @apply text-gradient from-soft-green to-soft-green/80;
   }
 }
-
-/* Reveal effect for hero headline */
-.reveal {
-  display: inline-block;
-  clip-path: inset(0 100% 0 0);
-  transition: clip-path 0.9s ease-out 0.25s;
-}
-
-.reveal.is-visible {
-  clip-path: inset(0 0 0 0);
-}
-
-.caret-block {
-  display: inline-block;
-  width: 0.06em;
-  height: 0.9em;
-  background: currentColor;
-  margin-left: 0.08em;
-  transform: translateY(0.08em);
-  animation: blink 1s steps(1, end) infinite;
-}
-
-@keyframes blink {
-  50% { opacity: 0; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .reveal { 
-    clip-path: none; 
-    transition: none; 
-  }
-  .caret-block { 
-    display: none; 
-  }
-}

@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AIMS Studio — AI Management System for ISO 42001 and EU AI Act Compliance",
-  description: "From AI inventory to Annex IV — one studio to classify AI Act risk, run ISO 42001 gap analysis, collect SHA-256 sealed evidence, and generate Annex IV, FRIA and SoA reports on demand.",
+  title: "AIMS Studio — ISO 42001 & EU AI Act Compliance Platform",
+  description: "Centralize AI systems, classify risk, map controls and generate Annex IV, FRIA and SoA documentation with SHA-256 integrity.",
   keywords: [
     "AI management system",
     "ISO 42001",
@@ -37,14 +37,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://aims-studio.com",
-    title: "AIMS Studio — AI Management System for ISO 42001 and EU AI Act Compliance",
-    description: "From AI inventory to Annex IV — one studio to classify AI Act risk, run ISO 42001 gap analysis, collect SHA-256 sealed evidence, and generate Annex IV, FRIA and SoA reports on demand.",
+    title: "AIMS Studio — ISO 42001 & EU AI Act Compliance Platform",
+    description: "Centralize AI systems, classify risk, map controls and generate Annex IV, FRIA and SoA documentation with SHA-256 integrity.",
     siteName: "AIMS Studio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AIMS Studio — AI Management System for ISO 42001 and EU AI Act Compliance",
-    description: "From AI inventory to Annex IV — one studio to classify AI Act risk, run ISO 42001 gap analysis, collect SHA-256 sealed evidence, and generate Annex IV, FRIA and SoA reports on demand.",
+    title: "AIMS Studio — ISO 42001 & EU AI Act Compliance Platform",
+    description: "Centralize AI systems, classify risk, map controls and generate Annex IV, FRIA and SoA documentation with SHA-256 integrity.",
     creator: "@aimsstudio",
   },
   robots: {

@@ -90,26 +90,16 @@ const Hero = () => {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-white/95 to-white/80 rounded-2xl border border-gray-200/30 shadow-2xl" />
             <div className="relative p-8">
-              <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-6">
+              <div className="flex justify-center items-center mb-6">
                 <button
                   onClick={() => {
                     handleCTAClick("primary");
                     scrollToSection("#contact");
                   }}
-                  className="group relative bg-gradient-to-r from-navy via-navy to-navy/90 text-white px-6 py-3 sm:px-10 sm:py-5 rounded-xl text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:from-navy/90 hover:to-navy transition-all duration-300"
+                  className="group relative bg-gradient-to-r from-navy via-navy to-navy/90 text-white px-8 py-4 sm:px-12 sm:py-5 rounded-xl text-lg sm:text-xl font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:from-navy/90 hover:to-navy transition-all duration-300"
                 >
                   <span className="relative z-10">Request a demo</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-navy to-navy/80 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </button>
-                
-                <button
-                  onClick={() => {
-                    handleCTAClick("secondary");
-                    scrollToSection("#features");
-                  }}
-                  className="group relative bg-gradient-to-br from-white/90 to-white/70 border border-gray-200/50 text-navy px-6 py-3 sm:px-10 sm:py-5 rounded-xl text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:from-white hover:to-white/90 transition-all duration-300"
-                >
-                  <span className="relative z-10">See how it works</span>
                 </button>
               </div>
 

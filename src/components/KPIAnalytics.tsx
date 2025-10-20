@@ -96,10 +96,10 @@ const KPIAnalytics = () => {
           {/* Section header */}
           <div className="text-center mb-16">
             <h2 className="section-heading text-navy mb-6">
-              Real-time readiness metrics
+              Dashboard overview
             </h2>
             <p className="section-subheading text-graphite max-w-3xl mx-auto">
-              Live dashboard showing your AI compliance status across all systems and controls.
+              View systems, high-risk count, evidence coverage %, open actions, and overall compliance score.
             </p>
           </div>
 

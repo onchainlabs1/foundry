@@ -38,22 +38,22 @@ const FeaturePillars = () => {
     },
     {
       title: "FRIA & Incidents",
-      description: "Guided Article 27 FRIA wizard plus post-market monitoring for Article 72 incident tracking and KPIs.",
+      description: "Guided Article 27 FRIA wizard (when applicable) and simple incident tracking for Article 72 reporting.",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
         </svg>
       ),
       features: [
-        "Article 27 FRIA wizard",
-        "Post-market monitoring",
-        "Article 72 incident tracking",
-        "Compliance KPIs dashboard"
+        "FRIA wizard (when applicable, Art. 27)",
+        "Simple incident tracking",
+        "Article 72 reporting",
+        "Basic compliance monitoring"
       ]
     },
     {
       title: "Docs & Exports",
-      description: "Generate Annex IV, FRIA and SoA ZIPs with integrity headers — one click and audit-ready.",
+      description: "Generate Annex IV, FRIA and SoA ZIPs with integrity headers — ready for audits.",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />

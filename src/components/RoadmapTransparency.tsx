@@ -3,32 +3,20 @@
 const RoadmapTransparency = () => {
   const roadmapItems = [
     {
-      title: "OAuth2/OIDC auth",
+      title: "OAuth2/OIDC authentication",
       description: "Enterprise single sign-on integration with major identity providers",
+      status: "planned",
+      quarter: "Q1 2025"
+    },
+    {
+      title: "PPTX executive exports",
+      description: "PowerPoint-ready compliance reports for executive presentations",
       status: "planned",
       quarter: "Q1 2025"
     },
     {
       title: "S3 storage integration",
       description: "Direct integration with AWS S3 and compatible storage services",
-      status: "planned",
-      quarter: "Q1 2025"
-    },
-    {
-      title: "Executive PPTX exports",
-      description: "PowerPoint-ready compliance reports for executive presentations",
-      status: "in-progress",
-      quarter: "Q4 2024"
-    },
-    {
-      title: "CI/CD pipeline",
-      description: "Automated compliance checks integrated into development workflows",
-      status: "planned",
-      quarter: "Q2 2025"
-    },
-    {
-      title: "Load testing & monitoring",
-      description: "Enhanced performance monitoring and automated load testing",
       status: "planned",
       quarter: "Q2 2025"
     }
@@ -75,10 +63,10 @@ const RoadmapTransparency = () => {
           {/* Section header */}
           <div className="text-center mb-16">
             <h2 className="section-heading text-navy mb-6">
-              What&apos;s next
+              Upcoming features
             </h2>
             <p className="section-subheading text-graphite max-w-3xl mx-auto">
-              Our roadmap for the next 12 months. We&apos;re committed to transparency and regular updates on our development progress.
+              Planned enhancements to AIMS Studio based on user feedback and compliance requirements.
             </p>
           </div>
 

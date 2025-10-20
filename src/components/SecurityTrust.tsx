@@ -102,29 +102,12 @@ const SecurityTrust = () => {
                   Compliance & Certification
                 </h3>
                 <p className="text-blue-800 leading-relaxed">
-                  <strong>We prepare evidence; certification and audits remain with accredited bodies.</strong> AIMS Studio provides the tools and documentation needed for ISO 42001 certification, but the actual certification process is conducted by accredited certification bodies according to international standards.
+                  <strong>AIMS Studio prepares documentation and evidence for ISO 42001 and EU AI Act compliance. Certification and conformity assessment are performed by accredited bodies.</strong>
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Security badges */}
-          <div className="mt-12 text-center">
-            <div className="inline-flex items-center space-x-8 bg-gray-50 px-8 py-4 rounded-2xl">
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                <span className="text-sm font-medium text-gray-700">SOC 2 Ready</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                <span className="text-sm font-medium text-gray-700">GDPR Compliant</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
-                <span className="text-sm font-medium text-gray-700">ISO 27001 Aligned</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

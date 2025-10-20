@@ -210,7 +210,7 @@ const ContactForm = () => {
                     </svg>
                     <div>
                       <p className="font-medium text-navy">Email</p>
-                      <p className="text-graphite">hello@foundry-ai-governance.com</p>
+                      <p className="text-graphite">hello@aimsstudio.ai</p>
                     </div>
                   </div>
                   

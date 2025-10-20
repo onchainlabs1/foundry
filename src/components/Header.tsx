@@ -14,7 +14,7 @@ const Header = () => {
       setIsScrolled(window.scrollY > 20);
       
       // Update active section based on scroll position
-      const sections = ["#why", "#offer", "#how", "#results", "#resources", "#faq", "#contact"];
+      const sections = ["#features", "#onboarding-wizard", "#dashboard", "#security", "#contact"];
       const currentSection = sections.find(section => {
         const element = document.querySelector(section);
         if (element) {
@@ -32,10 +32,10 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { label: "Home", href: "#hero" },
     { label: "Features", href: "#features" },
-    { label: "Templates", href: "#templates" },
-    { label: "Docs", href: "#docs" },
+    { label: "Onboarding", href: "#onboarding-wizard" },
+    { label: "Dashboard", href: "#dashboard" },
+    { label: "Security", href: "#security" },
     { label: "Contact", href: "#contact" },
   ];
 
@@ -153,7 +153,7 @@ const Header = () => {
                   }}
                   className="block w-full bg-navy text-white text-center py-3 px-6 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
                 >
-                  Book a 30-min Consultation
+                  Request a demo
                 </a>
               </div>
             </nav>

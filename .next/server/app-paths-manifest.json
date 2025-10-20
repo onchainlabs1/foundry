@@ -3,6 +3,6 @@
   "/api/contact/route": "app/api/contact/route.js",
   "/robots.txt/route": "app/robots.txt/route.js",
   "/page": "app/page.js",
-  "/sitemap.xml/route": "app/sitemap.xml/route.js",
-  "/demo/page": "app/demo/page.js"
+  "/demo/page": "app/demo/page.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js"
 }

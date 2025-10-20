@@ -33,33 +33,6 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto text-center">
-          {/* Trust signals */}
-          <div className="flex items-center justify-center space-x-6 mb-8 text-sm text-gray-500">
-            <div className="flex items-center">
-              <svg className="w-4 h-4 text-soft-green mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>Vendor-neutral</span>
-            </div>
-            <div className="flex items-center">
-              <svg className="w-4 h-4 text-soft-green mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>ISO/IEC 42001-aligned AIMS</span>
-            </div>
-            <div className="flex items-center">
-              <svg className="w-4 h-4 text-soft-green mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>Annex IV technical documentation</span>
-            </div>
-            <div className="flex items-center">
-              <svg className="w-4 h-4 text-soft-green mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>EU AI Act (2025–2027)</span>
-            </div>
-          </div>
 
           {/* Main heading with sophisticated typography */}
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-navy mb-8 leading-[0.9] tracking-tight">
@@ -71,20 +44,6 @@ const Hero = () => {
             <strong>AIMS Studio helps you centralize AI systems, classify EU AI Act risk, and generate ISO 42001 documentation — all in one secure workspace.</strong>
           </p>
 
-          {/* Product screenshot placeholder */}
-          <div className="mb-8 max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 border border-gray-200/50 shadow-lg">
-              <div className="text-center text-gray-500 mb-4">
-                <div className="w-16 h-16 bg-soft-green/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-soft-green" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <p className="text-sm">Wizard onboarding interface</p>
-                <p className="text-xs text-gray-400">Screenshot placeholder: /public/screens/wizard.png</p>
-              </div>
-            </div>
-          </div>
 
           {/* Glassmorphism CTA section */}
           <div className="relative">
@@ -103,24 +62,12 @@ const Hero = () => {
                 </button>
               </div>
 
-              <div className="flex items-center justify-center space-x-8 text-sm text-gray-600">
+              <div className="flex items-center justify-center text-sm text-gray-600">
                 <span className="flex items-center">
                   <svg className="w-4 h-4 text-soft-green mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   Response in 1 business day
-                </span>
-                <span className="flex items-center">
-                  <svg className="w-4 h-4 text-soft-green mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  Free consultation
-                </span>
-                <span className="flex items-center">
-                  <svg className="w-4 h-4 text-soft-green mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  No commitment
                 </span>
               </div>
             </div>

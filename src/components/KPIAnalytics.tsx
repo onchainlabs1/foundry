@@ -90,7 +90,7 @@ const KPIAnalytics = () => {
   ];
 
   return (
-    <section className="section-padding bg-gradient-to-br from-gray-50 to-white">
+    <section id="dashboard" className="section-padding bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Section header */}

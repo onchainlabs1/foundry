@@ -3,7 +3,7 @@
 const SecurityTrust = () => {
   const securityFeatures = [
     {
-      title: "Multi-tenant API-key security",
+      title: "API-key security",
       description: "Secure API access with tenant isolation and key-based authentication",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -12,7 +12,7 @@ const SecurityTrust = () => {
       )
     },
     {
-      title: "Evidence SHA-256 checksums & audit trail",
+      title: "Evidence integrity & audit trail",
       description: "Cryptographically sealed evidence with immutable audit trails for compliance",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -21,7 +21,7 @@ const SecurityTrust = () => {
       )
     },
     {
-      title: "Sanitized HTML previews (XSS-safe)",
+      title: "Secure document previews",
       description: "Secure document previews with XSS protection and content sanitization",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -39,7 +39,7 @@ const SecurityTrust = () => {
       )
     },
     {
-      title: "Docker + health/ready probes",
+      title: "Docker deployment",
       description: "Containerized deployment with health checks and readiness monitoring",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,7 +50,7 @@ const SecurityTrust = () => {
   ];
 
   return (
-    <section className="section-padding bg-white">
+    <section id="security" className="section-padding bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Section header */}

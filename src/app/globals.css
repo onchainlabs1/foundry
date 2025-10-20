@@ -171,3 +171,21 @@
     @apply text-gradient from-soft-green to-soft-green/80;
   }
 }
+
+/* Typewriter caret animation */
+.caret::after {
+  content: "│";
+  margin-left: 0.08em;
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .caret::after { 
+    content: ""; 
+    animation: none; 
+  }
+}

@@ -218,6 +218,13 @@ const KPIAnalytics = () => {
               </div>
             </div>
           </div>
+          
+          {/* Sample data caption */}
+          <div className="text-center mt-8">
+            <p className="text-sm text-gray-500">
+              Sample data for demonstration purposes.
+            </p>
+          </div>
         </div>
       </div>
     </section>

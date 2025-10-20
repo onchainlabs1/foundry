@@ -15,10 +15,9 @@ const FeaturePillars = () => {
         </svg>
       ),
       features: [
-        "AI system inventory management",
+        "Centralized AI system inventory",
         "Automated risk classification",
-        "EU AI Act compliance mapping",
-        "Risk assessment workflows"
+        "EU AI Act compliance mapping"
       ]
     },
     {
@@ -31,7 +30,6 @@ const FeaturePillars = () => {
       ),
       features: [
         "ISO 42001 control mapping",
-        "RACI matrix assignment",
         "Evidence integrity verification",
         "Statement of Applicability (SoA) export"
       ]
@@ -46,9 +44,8 @@ const FeaturePillars = () => {
       ),
       features: [
         "FRIA wizard (when applicable)",
-        "Simple incident tracking",
-        "Compliance reporting",
-        "Basic compliance monitoring"
+        "Incident tracking",
+        "Compliance reporting"
       ]
     },
     {
@@ -62,7 +59,6 @@ const FeaturePillars = () => {
       features: [
         "Annex IV generation",
         "FRIA documentation",
-        "SoA reports",
         "Audit-ready exports"
       ]
     }
@@ -78,7 +74,7 @@ const FeaturePillars = () => {
               Four pillars of AI compliance
             </h2>
             <p className="section-subheading text-graphite max-w-3xl mx-auto">
-              AIMS Studio covers the complete compliance lifecycle — from initial inventory to audit-ready documentation.
+              AIMS Studio covers every step of AI compliance — from system inventory to audit-ready documentation.
             </p>
           </div>
 

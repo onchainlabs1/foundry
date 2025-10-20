@@ -19,7 +19,7 @@ const Footer = () => {
           {/* Footer CTA */}
           <div className="text-center mb-8">
             <h3 className="text-xl font-bold mb-4">Reduce AI audit prep from months to days.</h3>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex justify-center items-center">
               <button
                 onClick={() => {
                   const contactSection = document.querySelector("#contact");
@@ -31,18 +31,6 @@ const Footer = () => {
               >
                 <span className="relative z-10">Request demo</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-soft-green to-soft-green/80 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </button>
-              
-              <button
-                onClick={() => {
-                  const contactSection = document.querySelector("#contact");
-                  if (contactSection) {
-                    contactSection.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-                className="group relative bg-gradient-to-br from-white/90 to-white/70 border border-gray-200/50 text-navy px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:from-white hover:to-white/90 transition-all duration-300"
-              >
-                <span className="relative z-10">Join beta</span>
               </button>
             </div>
           </div>
@@ -86,7 +74,7 @@ const Footer = () => {
                   © AIMS Studio. All rights reserved.
                 </p>
                 <p className="text-xs">
-                  <strong>We prepare evidence; certification and audits remain with accredited bodies.</strong>
+                  <strong>AIMS Studio prepares documentation and evidence for ISO 42001 and EU AI Act compliance. Certification is performed by accredited bodies.</strong>
                 </p>
               </div>
             </div>

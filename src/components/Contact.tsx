@@ -229,7 +229,7 @@ const ContactForm = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <div>
-                      <p className="font-medium text-navy">Free Demo</p>
+                      <p className="font-medium text-navy">30-minute demo call</p>
                       <p className="text-graphite">30-minute call, no commitment</p>
                     </div>
                   </div>

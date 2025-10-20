@@ -21,7 +21,7 @@ export default function Home() {
       <KPIAnalytics />
       <ConsultingSupport />
       <SecurityTrust />
-      <RoadmapTransparency />
+      {/* <RoadmapTransparency /> */}
       <Contact />
       <Footer />
     </main>

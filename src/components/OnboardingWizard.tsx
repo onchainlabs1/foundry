@@ -59,14 +59,14 @@ const OnboardingWizard = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
-          <div className="text-center mb-16">
-            <h2 className="section-heading text-navy mb-6">
-              AI System Onboarding
-            </h2>
-            <p className="section-subheading text-graphite max-w-3xl mx-auto">
-              Configure your AI systems for compliance monitoring in 5 simple steps.
-            </p>
-          </div>
+                 <div className="text-center mb-16">
+                   <h2 className="section-heading text-navy mb-6">
+                     AI Compliance Setup
+                   </h2>
+                   <p className="section-subheading text-graphite max-w-3xl mx-auto">
+                     Configure your AI systems for ISO 42001 & EU AI Act readiness in 5 clear steps.
+                   </p>
+                 </div>
 
           {/* Progress bar */}
           <div className="mb-12">
@@ -136,9 +136,9 @@ const OnboardingWizard = () => {
                 <h3 className="text-2xl font-bold text-navy mb-3">
                   Monitoring & Improvement
                 </h3>
-                <p className="text-graphite leading-relaxed mb-6">
-                  Set up basic incident tracking and compliance monitoring for your AI systems. Track incidents, monitor compliance metrics, and maintain audit trails for Article 72 reporting.
-                </p>
+                       <p className="text-graphite leading-relaxed mb-6">
+                         Set up basic incident tracking and compliance monitoring for your AI systems. Track incidents and maintain audit trails for Article 72 reporting.
+                       </p>
 
                 {/* Features */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

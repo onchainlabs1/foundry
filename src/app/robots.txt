@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://foundry-ai-governance.com/sitemap.xml
+Sitemap: https://aims-studio.com/sitemap.xml

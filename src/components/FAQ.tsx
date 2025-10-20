@@ -16,7 +16,7 @@ const FAQ = () => {
     },
     {
       question: "Do we need both phases?",
-      answer: "Most providers start with Phase A (Approval) to launch, then add Phase B (Monitoring) as soon as the system is live."
+      answer: "Most providers start with Phase A (Approval) to deploy, then add Phase B (Monitoring) as soon as the system is live."
     },
     {
       question: "What's expected from our team?",

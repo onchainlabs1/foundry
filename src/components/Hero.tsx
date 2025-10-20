@@ -41,7 +41,7 @@ const Hero = () => {
           
           {/* Subheading with better typography */}
           <p className="text-lg sm:text-xl md:text-2xl text-graphite mb-6 max-w-5xl mx-auto leading-relaxed font-light px-4">
-            <strong>AIMS Studio helps you centralize AI systems, classify EU AI Act risk, and generate ISO 42001 documentation — all in one secure workspace.</strong>
+            <strong>AIMS Studio automates ISO 42001 & EU AI Act readiness — centralizing AI systems, risk classification, and audit-ready documentation in one workspace.</strong>
           </p>
 
 

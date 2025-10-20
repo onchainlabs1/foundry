@@ -67,7 +67,7 @@ export default function DemoPage() {
 
           <div className="bg-white rounded-3xl shadow-sm border border-slate-200 p-5 mt-4">
             <div className="text-xs text-slate-500 mb-2">Organization</div>
-            <div className="text-sm font-medium">Foundry AI Governance</div>
+            <div className="text-sm font-medium">AIMS Studio</div>
             <div className="text-xs text-slate-500">EU • Demo Environment</div>
           </div>
         </aside>

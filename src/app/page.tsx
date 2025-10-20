@@ -4,6 +4,7 @@ import FeaturePillars from "@/components/FeaturePillars";
 import OnboardingWizard from "@/components/OnboardingWizard";
 import SeeItInAction from "@/components/SeeItInAction";
 import KPIAnalytics from "@/components/KPIAnalytics";
+import ConsultingSupport from "@/components/ConsultingSupport";
 import SecurityTrust from "@/components/SecurityTrust";
 import RoadmapTransparency from "@/components/RoadmapTransparency";
 import Contact from "@/components/Contact";
@@ -18,6 +19,7 @@ export default function Home() {
       <OnboardingWizard />
       <SeeItInAction />
       <KPIAnalytics />
+      <ConsultingSupport />
       <SecurityTrust />
       <RoadmapTransparency />
       <Contact />

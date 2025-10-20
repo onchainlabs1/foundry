@@ -194,7 +194,7 @@ const ContactForm = () => {
               Contact
             </h2>
             <p className="text-lg text-graphite mb-8">
-              <strong>Book a 30-min consultation or request the checklist. We reply in 1 business day.</strong>
+              <strong>Request a demo or join our beta program. We reply in 1 business day.</strong>
             </p>
           </div>
 
@@ -357,9 +357,12 @@ const ContactForm = () => {
                   <div className="space-y-2">
                     {[
                       "Checklist",
-                      "AIMS Kickstart (ISO/IEC 42001)",
-                      "Annex IV Tech Pack",
-                      "Readiness Sprint",
+                      "Request a demo",
+                      "Join beta program",
+                      "AI inventory & risk classification",
+                      "ISO 42001 gap analysis",
+                      "Annex IV documentation",
+                      "FRIA & incident tracking",
                       "General consultation"
                     ].map((goal) => (
                       <label key={goal} className="flex items-center">
@@ -425,7 +428,7 @@ const ContactForm = () => {
                   disabled={isSubmitting}
                   className="w-full bg-navy text-white py-3 px-6 rounded-lg font-semibold hover:bg-opacity-90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                  {isSubmitting ? "Sending..." : "Send Request"}
                 </button>
               </form>
             </div>

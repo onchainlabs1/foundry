@@ -5,45 +5,47 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AI Governance & EU AI Act | ISO/IEC 42001 (AIMS) | Foundry AI Governance",
-  description: "We operationalize AI governance and EU AI Act compliance with ISO/IEC 42001 and Annex IV evidence — from discovery to post-market monitoring. Book a 30-min consultation.",
+  title: "AIMS Studio — AI Management System for ISO 42001 and EU AI Act Compliance",
+  description: "From AI inventory to Annex IV — one studio to classify AI Act risk, run ISO 42001 gap analysis, collect SHA-256 sealed evidence, and generate Annex IV, FRIA and SoA reports on demand.",
   keywords: [
-    "AI governance",
+    "AI management system",
+    "ISO 42001",
     "EU AI Act",
-    "ISO/IEC 42001",
-    "AIMS",
+    "AI inventory",
+    "AI risk classification",
+    "Annex IV",
+    "FRIA",
+    "SoA",
     "AI compliance",
-    "AI risk management",
-    "AI transparency",
-    "AI audit",
-    "machine learning governance",
-    "AI ethics"
+    "evidence management",
+    "SHA-256",
+    "AI governance"
   ],
-  authors: [{ name: "Foundry AI Governance" }],
-  creator: "Foundry AI Governance",
-  publisher: "Foundry AI Governance",
+  authors: [{ name: "AIMS Studio" }],
+  creator: "AIMS Studio",
+  publisher: "AIMS Studio",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://foundry-ai-governance.com"),
+  metadataBase: new URL("https://aims-studio.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://foundry-ai-governance.com",
-    title: "AI Governance & EU AI Act | ISO/IEC 42001 (AIMS) | Foundry AI Governance",
-    description: "We operationalize AI governance and EU AI Act compliance with ISO/IEC 42001 and Annex IV evidence — from discovery to post-market monitoring. Book a 30-min consultation.",
-    siteName: "Foundry AI Governance",
+    url: "https://aims-studio.com",
+    title: "AIMS Studio — AI Management System for ISO 42001 and EU AI Act Compliance",
+    description: "From AI inventory to Annex IV — one studio to classify AI Act risk, run ISO 42001 gap analysis, collect SHA-256 sealed evidence, and generate Annex IV, FRIA and SoA reports on demand.",
+    siteName: "AIMS Studio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Governance & EU AI Act | ISO/IEC 42001 (AIMS) | Foundry AI Governance",
-    description: "We operationalize AI governance and EU AI Act compliance with ISO/IEC 42001 and Annex IV evidence — from discovery to post-market monitoring. Book a 30-min consultation.",
-    creator: "@foundryaigov",
+    title: "AIMS Studio — AI Management System for ISO 42001 and EU AI Act Compliance",
+    description: "From AI inventory to Annex IV — one studio to classify AI Act risk, run ISO 42001 gap analysis, collect SHA-256 sealed evidence, and generate Annex IV, FRIA and SoA reports on demand.",
+    creator: "@aimsstudio",
   },
   robots: {
     index: true,
@@ -77,12 +79,12 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Foundry AI Governance",
-              url: "https://foundry-ai-governance.com",
-              logo: "https://foundry-ai-governance.com/logo.png",
-              description: "We operationalize AI governance and EU AI Act compliance with ISO/IEC 42001 and Annex IV evidence — from discovery to post-market monitoring.",
+              name: "AIMS Studio",
+              url: "https://aims-studio.com",
+              logo: "https://aims-studio.com/logo.png",
+              description: "AI Management System for ISO 42001 and EU AI Act compliance — from AI inventory to Annex IV documentation.",
               sameAs: [
-                "https://linkedin.com/company/foundry-ai-governance"
+                "https://linkedin.com/company/aims-studio"
               ],
               contactPoint: {
                 "@type": "ContactPoint",

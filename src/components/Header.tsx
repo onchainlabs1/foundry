@@ -32,12 +32,10 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { label: "Why Now", href: "#why" },
-    { label: "Offer", href: "#offer" },
-    { label: "How We Work", href: "#how" },
-    { label: "Results", href: "#results" },
-    { label: "Resources", href: "#resources" },
-    { label: "FAQ", href: "#faq" },
+    { label: "Home", href: "#hero" },
+    { label: "Features", href: "#features" },
+    { label: "Templates", href: "#templates" },
+    { label: "Docs", href: "#docs" },
     { label: "Contact", href: "#contact" },
   ];
 
@@ -117,7 +115,7 @@ const Header = () => {
             onClick={(e) => handleNavClick(e, "#contact")}
             className="group relative bg-gradient-to-r from-navy via-navy to-navy/90 text-white px-6 py-3 rounded-xl text-sm font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:from-navy/90 hover:to-navy transition-all duration-300 overflow-hidden"
           >
-            <span className="relative z-10">Book a 30-min Consultation</span>
+            <span className="relative z-10">Request a demo</span>
             {/* Shimmer effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
           </a>

@@ -63,18 +63,28 @@ const Hero = () => {
 
           {/* Main heading with sophisticated typography */}
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-navy mb-8 leading-[0.9] tracking-tight">
-            From approval to monitoring — EU AI Act compliance, fast.
+            From AI inventory to Annex IV — fast.
           </h1>
           
           {/* Subheading with better typography */}
           <p className="text-lg sm:text-xl md:text-2xl text-graphite mb-6 max-w-5xl mx-auto leading-relaxed font-light px-4">
-            <strong>We assemble your Annex IV technical file (for approval/CE-readiness) and set up ISO/IEC 42001-based post-market monitoring — KPIs, incident response, and evidence bundles. Vendor-neutral, no tool lock-in.</strong>
+            <strong>AIMS Studio centralizes AI system inventory, AI Act risk classification, ISO 42001 gap analysis, and evidence with SHA-256 integrity — producing Annex IV, FRIA and SoA documentation instantly.</strong>
           </p>
 
-          {/* Who we serve line */}
-          <p className="text-sm text-gray-600 mb-8 font-medium">
-            <strong>Who we serve:</strong> Industrial AI/robotics (high-risk) · B2B SaaS with GenAI/ML · GPAI integrators
-          </p>
+          {/* Product screenshot placeholder */}
+          <div className="mb-8 max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 border border-gray-200/50 shadow-lg">
+              <div className="text-center text-gray-500 mb-4">
+                <div className="w-16 h-16 bg-soft-green/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-soft-green" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <p className="text-sm">Wizard onboarding interface</p>
+                <p className="text-xs text-gray-400">Screenshot placeholder: /public/screens/wizard.png</p>
+              </div>
+            </div>
+          </div>
 
           {/* Glassmorphism CTA section */}
           <div className="relative">
@@ -88,18 +98,18 @@ const Hero = () => {
                   }}
                   className="group relative bg-gradient-to-r from-navy via-navy to-navy/90 text-white px-6 py-3 sm:px-10 sm:py-5 rounded-xl text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:from-navy/90 hover:to-navy transition-all duration-300"
                 >
-                  <span className="relative z-10">Book a 30-min Consultation</span>
+                  <span className="relative z-10">Request a demo</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-navy to-navy/80 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </button>
                 
                 <button
                   onClick={() => {
                     handleCTAClick("secondary");
-                    scrollToSection("#resources");
+                    scrollToSection("#features");
                   }}
                   className="group relative bg-gradient-to-br from-white/90 to-white/70 border border-gray-200/50 text-navy px-6 py-3 sm:px-10 sm:py-5 rounded-xl text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:from-white hover:to-white/90 transition-all duration-300"
                 >
-                  <span className="relative z-10">Get the AI Act Readiness Checklist</span>
+                  <span className="relative z-10">See how it works</span>
                 </button>
               </div>
 

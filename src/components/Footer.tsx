@@ -1,3 +1,5 @@
+"use client";
+
 import Logo from "./Logo";
 
 const Footer = () => {
@@ -10,8 +12,39 @@ const Footer = () => {
               <Logo className="text-white" />
             </div>
             <p className="text-gray-300 mb-6">
-              Independent AI governance for the EU AI Act (ISO/IEC 42001 & Annex IV)
+              AI Management System for ISO 42001 and EU AI Act compliance
             </p>
+          </div>
+          
+          {/* Footer CTA */}
+          <div className="text-center mb-8">
+            <h3 className="text-xl font-bold mb-4">Reduce AI audit prep from months to days.</h3>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <button
+                onClick={() => {
+                  const contactSection = document.querySelector("#contact");
+                  if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+                className="group relative bg-gradient-to-r from-soft-green via-soft-green to-soft-green/90 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:from-soft-green/90 hover:to-soft-green transition-all duration-300"
+              >
+                <span className="relative z-10">Request demo</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-soft-green to-soft-green/80 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </button>
+              
+              <button
+                onClick={() => {
+                  const contactSection = document.querySelector("#contact");
+                  if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+                className="group relative bg-gradient-to-br from-white/90 to-white/70 border border-gray-200/50 text-navy px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:from-white hover:to-white/90 transition-all duration-300"
+              >
+                <span className="relative z-10">Join beta</span>
+              </button>
+            </div>
           </div>
           
           <div className="border-t border-gray-600 pt-8">
@@ -19,7 +52,7 @@ const Footer = () => {
               <div>
                 <h4 className="font-semibold mb-4">Contact</h4>
                 <p className="text-gray-300 text-sm mb-2">
-                  Book a 30-min consultation
+                  Request a demo or join beta
                 </p>
                 <p className="text-gray-300 text-sm">
                   Response in 1 business day
@@ -36,7 +69,7 @@ const Footer = () => {
                     Privacy Policy
                   </a>
                   <a 
-                    href="https://linkedin.com/company/foundry-ai-governance" 
+                    href="https://linkedin.com/company/aims-studio" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="block text-gray-300 text-sm hover:text-white transition-colors"
@@ -50,10 +83,10 @@ const Footer = () => {
             <div className="border-t border-gray-600 pt-6">
               <div className="text-center text-sm text-gray-400">
                 <p className="mb-2">
-                  © Foundry AI Governance. All rights reserved.
+                  © AIMS Studio. All rights reserved.
                 </p>
                 <p className="text-xs">
-                  <strong>Technical & governance consulting (not legal advice). Not affiliated with Microsoft or Palantir.</strong>
+                  <strong>We prepare evidence; certification and audits remain with accredited bodies.</strong>
                 </p>
               </div>
             </div>

@@ -31,10 +31,10 @@ export default function Logo({ className = "", showText = true }: LogoProps) {
       {showText && (
         <div className="flex flex-col">
           <div className="text-navy font-bold text-lg leading-tight">
-            Foundry AI
+            AIMS
           </div>
           <div className="text-navy font-medium text-sm leading-tight">
-            Governance
+            Studio
           </div>
         </div>
       )}

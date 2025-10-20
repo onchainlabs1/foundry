@@ -1,13 +1,11 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import WhyNow from "@/components/WhyNow";
-import OfferSection from "@/components/OfferSection";
-import HowWeWork from "@/components/HowWeWork";
-import Results from "@/components/Results";
-import PlatformPreview from "@/components/PlatformPreview";
-import Resources from "@/components/Resources";
+import FeaturePillars from "@/components/FeaturePillars";
+import SeeItInAction from "@/components/SeeItInAction";
+import KPIAnalytics from "@/components/KPIAnalytics";
+import SecurityTrust from "@/components/SecurityTrust";
+import RoadmapTransparency from "@/components/RoadmapTransparency";
 import Contact from "@/components/Contact";
-import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -15,14 +13,12 @@ export default function Home() {
     <main id="main">
       <Header />
       <Hero />
-      <WhyNow />
-      <OfferSection />
-      <HowWeWork />
-      <Results />
-      <PlatformPreview />
-      <Resources />
+      <FeaturePillars />
+      <SeeItInAction />
+      <KPIAnalytics />
+      <SecurityTrust />
+      <RoadmapTransparency />
       <Contact />
-      <FAQ />
       <Footer />
     </main>
   );

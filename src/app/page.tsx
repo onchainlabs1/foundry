@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import FeaturePillars from "@/components/FeaturePillars";
+import OnboardingWizard from "@/components/OnboardingWizard";
 import SeeItInAction from "@/components/SeeItInAction";
 import KPIAnalytics from "@/components/KPIAnalytics";
 import SecurityTrust from "@/components/SecurityTrust";
@@ -14,6 +15,7 @@ export default function Home() {
       <Header />
       <Hero />
       <FeaturePillars />
+      <OnboardingWizard />
       <SeeItInAction />
       <KPIAnalytics />
       <SecurityTrust />

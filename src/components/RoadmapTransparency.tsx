@@ -75,10 +75,10 @@ const RoadmapTransparency = () => {
           {/* Section header */}
           <div className="text-center mb-16">
             <h2 className="section-heading text-navy mb-6">
-              What's next
+              What&apos;s next
             </h2>
             <p className="section-subheading text-graphite max-w-3xl mx-auto">
-              Our roadmap for the next 12 months. We're committed to transparency and regular updates on our development progress.
+              Our roadmap for the next 12 months. We&apos;re committed to transparency and regular updates on our development progress.
             </p>
           </div>
 

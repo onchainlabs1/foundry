@@ -171,7 +171,7 @@ const ContactForm = () => {
             </div>
             <h2 className="text-3xl font-bold text-navy mb-4">Thank you!</h2>
             <p className="text-graphite mb-6">
-              We've received your message and will get back to you within 1 business day.
+              We&apos;ve received your message and will get back to you within 1 business day.
             </p>
             <button
               onClick={() => setIsSubmitted(false)}

@@ -63,12 +63,12 @@ const Hero = () => {
 
           {/* Main heading with sophisticated typography */}
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-navy mb-8 leading-[0.9] tracking-tight">
-            From AI inventory to Annex IV — fast.
+            Make AI compliance simple.
           </h1>
           
           {/* Subheading with better typography */}
           <p className="text-lg sm:text-xl md:text-2xl text-graphite mb-6 max-w-5xl mx-auto leading-relaxed font-light px-4">
-            <strong>AIMS Studio centralizes AI system inventory, AI Act risk classification, ISO 42001 gap analysis, and evidence with SHA-256 integrity — producing Annex IV, FRIA and SoA documentation instantly.</strong>
+            <strong>AIMS Studio helps you centralize AI systems, classify EU AI Act risk, and generate ISO 42001 documentation — all in one secure workspace.</strong>
           </p>
 
           {/* Product screenshot placeholder */}

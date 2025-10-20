@@ -6,10 +6,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  // Force new deployment
-  generateBuildId: async () => {
-    return 'build-' + Date.now()
-  },
+  output: 'standalone',
 }
 
 module.exports = nextConfig

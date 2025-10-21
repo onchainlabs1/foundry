@@ -174,7 +174,7 @@ const OnboardingWizard = () => {
               }}
               className="group relative bg-gradient-to-r from-navy via-navy to-navy/90 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:from-navy/90 hover:to-navy transition-all duration-300"
             >
-              <span className="relative z-10">Start your onboarding</span>
+              <span className="relative z-10">Start your compliance setup</span>
               <div className="absolute inset-0 bg-gradient-to-r from-navy to-navy/80 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </button>
           </div>

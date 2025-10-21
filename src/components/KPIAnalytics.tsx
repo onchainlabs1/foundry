@@ -96,7 +96,7 @@ const KPIAnalytics = () => {
           {/* Section header */}
           <div className="text-center mb-16">
             <h2 className="section-heading text-navy mb-6">
-              Dashboard overview
+              Dashboard Overview
             </h2>
             <p className="section-subheading text-graphite max-w-3xl mx-auto">
               View systems, risk levels, evidence coverage %, open actions, and the overall compliance score.

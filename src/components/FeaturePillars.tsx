@@ -8,7 +8,7 @@ const FeaturePillars = () => {
   const pillars = [
     {
       title: "Inventory & Risk",
-      description: "Register all AI systems in one dashboard and classify risk levels under the EU AI Act.",
+      description: "Centralized registration and EU AI Act risk classification.",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -76,9 +76,6 @@ const FeaturePillars = () => {
             <p className="section-subheading text-graphite max-w-3xl mx-auto">
               Everything required to meet EU AI Act obligations — from system inventory to audit-ready documentation.
             </p>
-            <p className="text-sm text-gray-500 mt-4">
-              ⚖️ The EU AI Act will be enforceable by 2026. AIMS Studio helps you get ready before deadlines hit.
-            </p>
           </div>
 
           {/* Feature pillars grid */}
@@ -122,7 +119,7 @@ const FeaturePillars = () => {
           </div>
 
           {/* Bottom CTA */}
-          <div className="text-center mt-16">
+          <div id="see-it-in-action" className="text-center mt-16">
             <div className="inline-flex items-center space-x-4">
               <button
                 onClick={() => {

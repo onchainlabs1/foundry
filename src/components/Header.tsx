@@ -34,7 +34,7 @@ const Header = () => {
   const navItems = [
     { label: "Why now", href: "#why-now" },
     { label: "Features", href: "#features" },
-    { label: "Onboarding", href: "#onboarding-wizard" },
+    { label: "Compliance Setup", href: "#onboarding-wizard" },
     { label: "Dashboard", href: "#dashboard" },
     { label: "Security", href: "#security" },
     { label: "Contact", href: "#contact" },

@@ -29,7 +29,7 @@ const Footer = () => {
                 }}
                 className="group relative bg-gradient-to-r from-soft-green via-soft-green to-soft-green/90 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:from-soft-green/90 hover:to-soft-green transition-all duration-300"
               >
-                <span className="relative z-10">Request demo</span>
+                <span className="relative z-10">Request a demo</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-soft-green to-soft-green/80 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </button>
             </div>

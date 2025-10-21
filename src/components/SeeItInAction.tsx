@@ -3,7 +3,7 @@
 const SeeItInAction = () => {
   const features = [
     {
-      title: "Wizard Onboarding",
+      title: "Compliance Setup Wizard",
       description: "Guided setup for inventory and risk.",
       caption: "Step-by-step discovery → start now"
     },

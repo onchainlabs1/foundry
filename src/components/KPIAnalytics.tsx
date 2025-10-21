@@ -215,6 +215,11 @@ const KPIAnalytics = () => {
                     View Evidence Report
                   </button>
                 </div>
+                <div className="mt-4 text-center">
+                  <p className="text-xs text-gray-500">
+                    Generate Annex IV · Export SoA · Run FRIA Wizard · View Evidence Report
+                  </p>
+                </div>
               </div>
             </div>
           </div>

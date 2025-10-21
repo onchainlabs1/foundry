@@ -99,7 +99,7 @@ const KPIAnalytics = () => {
               Dashboard overview
             </h2>
             <p className="section-subheading text-graphite max-w-3xl mx-auto">
-              View systems, high-risk count, evidence coverage %, open actions, and overall compliance score.
+              View systems, risk levels, evidence coverage %, open actions, and the overall compliance score.
             </p>
           </div>
 

@@ -11,9 +11,9 @@ const Footer = () => {
             <div className="flex justify-center mb-4">
               <Logo className="text-white" />
             </div>
-            <p className="text-gray-300 mb-6">
-              AI Management System for ISO 42001 and EU AI Act compliance
-            </p>
+                   <p className="text-gray-300 mb-6">
+                     AI Management System for ISO 42001 and EU AI Act compliance.
+                   </p>
           </div>
           
           {/* Footer CTA */}
@@ -39,9 +39,9 @@ const Footer = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div>
                 <h4 className="font-semibold mb-4">Contact</h4>
-                <p className="text-gray-300 text-sm mb-2">
-                  Request a demo or join beta
-                </p>
+                       <p className="text-gray-300 text-sm mb-2">
+                         Request a demo or get expert guidance
+                       </p>
                 <p className="text-gray-300 text-sm">
                   Response in 1 business day
                 </p>
@@ -73,9 +73,9 @@ const Footer = () => {
                 <p className="mb-2">
                   © AIMS Studio. All rights reserved.
                 </p>
-                <p className="text-xs">
-                  <strong>AIMS Studio prepares documentation and evidence for ISO 42001 and EU AI Act compliance. Certification is performed by accredited bodies.</strong>
-                </p>
+                       <p className="text-xs">
+                         <strong>AIMS Studio prepares documentation and evidence for ISO 42001 and EU AI Act compliance. Certification and conformity assessment are performed by accredited bodies.</strong>
+                       </p>
               </div>
             </div>
           </div>

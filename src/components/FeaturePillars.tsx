@@ -8,58 +8,58 @@ const FeaturePillars = () => {
   const pillars = [
     {
       title: "Inventory & Risk",
-      description: "Centralize AI systems and automatically classify risk levels for EU AI Act compliance.",
+      description: "Register all AI systems in one dashboard and classify risk levels under the EU AI Act.",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
       ),
       features: [
-        "Centralized AI system inventory",
-        "Automated risk classification",
-        "EU AI Act compliance mapping"
+        "Register all AI systems in one dashboard",
+        "Classify risk levels under the EU AI Act",
+        "Identify high-risk obligations (Annex III)"
       ]
     },
     {
       title: "Controls & Evidence",
-      description: "Map ISO 42001 controls, assign owners, and link evidence with integrity verification.",
+      description: "Map ISO 42001 controls and assign owners (RACI), then link cryptographically sealed evidence.",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
         </svg>
       ),
       features: [
-        "ISO 42001 control mapping",
-        "Evidence integrity verification",
-        "Statement of Applicability (SoA) export"
+        "Map ISO 42001 controls and assign owners (RACI)",
+        "Link cryptographically sealed evidence (SHA-256)",
+        "Export Statement of Applicability (SoA)"
       ]
     },
     {
-      title: "FRIA & Incidents",
-      description: "Guided FRIA wizard and incident tracking for compliance reporting.",
+      title: "FRIA & Monitoring",
+      description: "Run Fundamental Rights Impact Assessments and track incidents for post-market monitoring.",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
         </svg>
       ),
       features: [
-        "FRIA wizard (when applicable)",
-        "Incident tracking",
-        "Compliance reporting"
+        "Run Fundamental Rights Impact Assessments (when applicable, Art. 27)",
+        "Track incidents and KPIs for post-market monitoring (Article 72)",
+        "Keep a tamper-proof audit trail"
       ]
     },
     {
-      title: "Docs & Exports",
-      description: "Generate Annex IV, FRIA and SoA documentation — ready for audits.",
+      title: "Documentation & Reporting",
+      description: "Generate Annex IV technical files, FRIA and SoA reports with audit-ready packages.",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
       ),
       features: [
-        "Annex IV generation",
-        "FRIA documentation",
-        "Audit-ready exports"
+        "Generate Annex IV technical files",
+        "Produce FRIA and SoA reports",
+        "Download audit-ready ZIP packages with integrity headers"
       ]
     }
   ];
@@ -71,10 +71,13 @@ const FeaturePillars = () => {
           {/* Section header */}
           <div className="text-center mb-16">
             <h2 className="section-heading text-navy mb-6">
-              Four pillars of AI compliance
+              What you need to be AI Act ready
             </h2>
             <p className="section-subheading text-graphite max-w-3xl mx-auto">
-              AIMS Studio covers every step of AI compliance — from system inventory to audit-ready documentation.
+              Everything required to meet EU AI Act obligations — from system inventory to audit-ready documentation.
+            </p>
+            <p className="text-sm text-gray-500 mt-4">
+              ⚖️ The EU AI Act will be enforceable by 2026. AIMS Studio helps you get ready before deadlines hit.
             </p>
           </div>
 

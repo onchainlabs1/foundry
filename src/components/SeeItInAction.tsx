@@ -4,18 +4,18 @@ const SeeItInAction = () => {
   const features = [
     {
       title: "Wizard Onboarding",
-      description: "Guided setup for AI system inventory and risk classification",
-      caption: "Step-by-step wizard for comprehensive AI system discovery"
+      description: "Guided setup for inventory and risk.",
+      caption: "Step-by-step discovery → start now"
     },
     {
       title: "Evidence Management",
-      description: "Cryptographically sealed evidence with SHA-256 integrity",
-      caption: "Evidence sealed with SHA-256 for audit integrity"
+      description: "SHA-256 integrity and immutable history.",
+      caption: "Sealed evidence for audits → view example"
     },
     {
       title: "Generate Drafts",
-      description: "One-click generation of Annex IV, FRIA and SoA documents",
-      caption: "Audit-ready documentation generated instantly"
+      description: "One-click Annex IV, FRIA, SoA.",
+      caption: "Audit-ready docs → preview output"
     }
   ];
 

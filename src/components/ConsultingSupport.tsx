@@ -10,7 +10,7 @@ const ConsultingSupport = () => {
               Consulting & Expert Support
             </h2>
             <p className="section-subheading text-graphite max-w-3xl mx-auto">
-              Compliance isn't just software — sometimes you need guidance. Our experts help you implement controls, validate FRIA, and prepare for ISO 42001 certification.
+              Compliance isn't just software — our experts help you implement controls, validate FRIA, and prepare for ISO 42001 certification.
             </p>
           </div>
 
@@ -23,7 +23,7 @@ const ConsultingSupport = () => {
               </div>
               <h3 className="text-xl font-bold text-navy mb-4">Control Implementation</h3>
               <p className="text-graphite leading-relaxed">
-                Expert guidance on implementing ISO 42001 controls and mapping them to your specific AI systems and processes.
+                Map controls to your systems and processes.
               </p>
             </div>
 
@@ -35,7 +35,7 @@ const ConsultingSupport = () => {
               </div>
               <h3 className="text-xl font-bold text-navy mb-4">FRIA Validation</h3>
               <p className="text-graphite leading-relaxed">
-                Professional review and validation of your Fundamental Rights Impact Assessment to ensure compliance with Article 27.
+                Professional review (when applicable, Art. 27).
               </p>
             </div>
 
@@ -47,7 +47,7 @@ const ConsultingSupport = () => {
               </div>
               <h3 className="text-xl font-bold text-navy mb-4">Certification Prep</h3>
               <p className="text-graphite leading-relaxed">
-                Comprehensive preparation for ISO 42001 certification, including gap analysis, documentation review, and audit readiness.
+                Gap analysis, document review, audit readiness.
               </p>
             </div>
           </div>

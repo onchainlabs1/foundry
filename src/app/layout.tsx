@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "AIMS Studio — ISO 42001 & EU AI Act Compliance Platform",
-  description: "Centralize AI systems, classify risk, map controls and generate Annex IV, FRIA and SoA documentation with SHA-256 integrity.",
+  description: "Centralize AI systems, classify risk, and generate Annex IV, FRIA (when applicable) and SoA with SHA-256 integrity — all in one workspace.",
   keywords: [
     "AI management system",
     "ISO 42001",
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://aims-studio.com",
     title: "AIMS Studio — ISO 42001 & EU AI Act Compliance Platform",
-    description: "Centralize AI systems, classify risk, map controls and generate Annex IV, FRIA and SoA documentation with SHA-256 integrity.",
+    description: "Centralize AI systems, classify risk, and generate Annex IV, FRIA (when applicable) and SoA with SHA-256 integrity — all in one workspace.",
     siteName: "AIMS Studio",
   },
   twitter: {
     card: "summary_large_image",
     title: "AIMS Studio — ISO 42001 & EU AI Act Compliance Platform",
-    description: "Centralize AI systems, classify risk, map controls and generate Annex IV, FRIA and SoA documentation with SHA-256 integrity.",
+    description: "Centralize AI systems, classify risk, and generate Annex IV, FRIA (when applicable) and SoA with SHA-256 integrity — all in one workspace.",
     creator: "@aimsstudio",
   },
   robots: {

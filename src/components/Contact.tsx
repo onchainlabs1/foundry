@@ -194,7 +194,7 @@ const ContactForm = () => {
               Contact
             </h2>
             <p className="text-lg text-graphite mb-8">
-              <strong>Request a demo or join our beta program. We reply in 1 business day.</strong>
+              <strong>Request a demo or get expert guidance. We reply in 1 business day.</strong>
             </p>
           </div>
 
@@ -229,8 +229,8 @@ const ContactForm = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <div>
-                      <p className="font-medium text-navy">30-minute demo call</p>
-                      <p className="text-graphite">30-minute call, no commitment</p>
+                <p className="font-medium text-navy">30-minute demo</p>
+                <p className="text-graphite">No commitment, no sales pressure</p>
                     </div>
                   </div>
                 </div>
@@ -239,24 +239,24 @@ const ContactForm = () => {
               <div className="bg-gradient-to-br from-navy/5 to-soft-green/5 p-6 rounded-xl">
                 <h4 className="font-semibold text-navy mb-3">What to Expect</h4>
                 <ul className="space-y-2 text-sm text-graphite">
-                  <li className="flex items-start">
-                    <svg className="w-4 h-4 text-soft-green mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Quick assessment of your AI governance needs</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="w-4 h-4 text-soft-green mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Clear next steps for EU AI Act compliance</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="w-4 h-4 text-soft-green mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>No sales pressure, just helpful guidance</span>
-                  </li>
+                <li className="flex items-start">
+                  <svg className="w-4 h-4 text-soft-green mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Quick assessment of your AI compliance needs</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-4 h-4 text-soft-green mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Clear next steps for EU AI Act readiness</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-4 h-4 text-soft-green mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Helpful guidance from real experts</span>
+                </li>
                 </ul>
               </div>
             </div>
@@ -358,7 +358,6 @@ const ContactForm = () => {
                     {[
                       "Checklist",
                       "Request a demo",
-                      "Join beta program",
                       "AI inventory & risk classification",
                       "ISO 42001 gap analysis",
                       "Annex IV documentation",

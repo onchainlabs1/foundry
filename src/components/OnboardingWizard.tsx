@@ -4,7 +4,7 @@ const OnboardingWizard = () => {
   const steps = [
     {
       title: "Company Setup",
-      description: "Configure your organization details and compliance requirements",
+      description: "Define organization context and key contacts",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -14,7 +14,7 @@ const OnboardingWizard = () => {
     },
     {
       title: "AI System Definition",
-      description: "Add and categorize your AI systems for compliance tracking",
+      description: "Register purpose, data use, deployment, and owners",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -24,7 +24,7 @@ const OnboardingWizard = () => {
     },
     {
       title: "Risk & Controls",
-      description: "Classify risk levels and map ISO 42001 controls to your systems",
+      description: "Classify risk, select ISO 42001 controls, assign RACI",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -34,7 +34,7 @@ const OnboardingWizard = () => {
     },
     {
       title: "Human Oversight",
-      description: "Assign RACI owners and define human oversight processes",
+      description: "Define human-in-the-loop rules and appeals process",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
@@ -44,7 +44,7 @@ const OnboardingWizard = () => {
     },
     {
       title: "Monitoring & Improvement",
-      description: "Set up basic incident tracking and compliance monitoring",
+      description: "Incidents, metrics, and audit trails (Article 72)",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -137,7 +137,7 @@ const OnboardingWizard = () => {
                   Monitoring & Improvement
                 </h3>
                        <p className="text-graphite leading-relaxed mb-6">
-                         Set up basic incident tracking and compliance monitoring for your AI systems. Track incidents and maintain audit trails for Article 72 reporting.
+                         Set up incident tracking, compliance metrics, and audit trails for your AI systems. Monitor performance and maintain records for Article 72 reporting.
                        </p>
 
                 {/* Features */}

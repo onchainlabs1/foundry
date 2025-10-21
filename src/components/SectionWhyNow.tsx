@@ -11,7 +11,7 @@ const SectionWhyNow = () => {
   };
 
   return (
-    <section id="why-now" className="section-padding bg-gradient-to-b from-slate-50/60 to-transparent dark:from-slate-900/40">
+    <section id="why-now" className="section-padding bg-gradient-to-br from-white to-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
@@ -26,27 +26,14 @@ const SectionWhyNow = () => {
 
           {/* Content */}
           <div className="max-w-4xl mx-auto">
-            {/* Timeline */}
-            <div className="relative mb-12" aria-hidden="true">
-              <div className="h-[2px] bg-slate-200 dark:bg-slate-700 w-full"></div>
-              <div className="absolute top-0 left-0 w-2.5 h-2.5 rounded-full bg-slate-400 dark:bg-slate-500 -translate-y-1"></div>
-              <div className="absolute top-0 left-1/2 w-2.5 h-2.5 rounded-full bg-slate-400 dark:bg-slate-500 -translate-y-1 -translate-x-1/2"></div>
-              <div className="absolute top-0 right-0 w-2.5 h-2.5 rounded-full bg-slate-400 dark:bg-slate-500 -translate-y-1"></div>
-              <div className="flex justify-between mt-2">
-                <span className="text-xs text-slate-600 dark:text-slate-400">Now</span>
-                <span className="text-xs text-slate-600 dark:text-slate-400">2025</span>
-                <span className="text-xs text-slate-600 dark:text-slate-400">2026</span>
-              </div>
-            </div>
-
             {/* Bullets */}
             <ul className="space-y-6 mb-12">
               <li className="flex items-start">
                 <div className="flex-shrink-0 w-2 h-2 bg-soft-green rounded-full mt-3 mr-4"></div>
                 <div>
                   <div className="flex items-center gap-3 mb-2">
-                    <span className="inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200">
-                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <span className="inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-medium border border-slate-300 text-slate-700 dark:border-slate-600 dark:text-slate-200">
+                      <svg className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                       </svg>
                       〔2025〕
@@ -61,8 +48,8 @@ const SectionWhyNow = () => {
                 <div className="flex-shrink-0 w-2 h-2 bg-soft-green rounded-full mt-3 mr-4"></div>
                 <div>
                   <div className="flex items-center gap-3 mb-2">
-                    <span className="inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200">
-                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <span className="inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-medium border border-slate-300 text-slate-700 dark:border-slate-600 dark:text-slate-200">
+                      <svg className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                       </svg>
                       〔2026〕
@@ -77,8 +64,8 @@ const SectionWhyNow = () => {
                 <div className="flex-shrink-0 w-2 h-2 bg-soft-green rounded-full mt-3 mr-4"></div>
                 <div>
                   <div className="flex items-center gap-3 mb-2">
-                    <span className="inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200">
-                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <span className="inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-medium border border-slate-300 text-slate-700 dark:border-slate-600 dark:text-slate-200">
+                      <svg className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                       </svg>
                       〔Now〕

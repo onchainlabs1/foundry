@@ -15,7 +15,6 @@ const FeaturePillars = () => {
         </svg>
       ),
       features: [
-        "Register all AI systems in one dashboard",
         "Classify risk levels under the EU AI Act",
         "Identify high-risk obligations (Annex III)"
       ]

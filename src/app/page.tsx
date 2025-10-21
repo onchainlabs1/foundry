@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import SectionWhyNow from "@/components/SectionWhyNow";
 import FeaturePillars from "@/components/FeaturePillars";
 import OnboardingWizard from "@/components/OnboardingWizard";
 import SeeItInAction from "@/components/SeeItInAction";
@@ -12,10 +13,11 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main id="main">
-      <Header />
-      <Hero />
-      <FeaturePillars />
+        <main id="main">
+          <Header />
+          <Hero />
+          <SectionWhyNow />
+          <FeaturePillars />
       <OnboardingWizard />
       <SeeItInAction />
       <KPIAnalytics />
